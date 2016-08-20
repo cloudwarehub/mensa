@@ -12,15 +12,11 @@ var core_1 = require('@angular/core');
 var date_component_1 = require('./date.component');
 var TaskbarComponent = (function () {
     function TaskbarComponent() {
-        this.open = false;
     }
-    TaskbarComponent.prototype.onStartClick = function () {
-        this.open = !this.open;
-    };
     TaskbarComponent = __decorate([
         core_1.Component({
             selector: 'taskbar',
-            template: "\n    <div class=\"start\" (click)=\"onStartClick()\"><img src=\"assets/windows_7_orb_icon_by_skyangels.png\"><startmenu *ngIf=\"open\"></startmenu></div>\n    <datetime></datetime>\n    ",
+            template: "\n    <startmenu></startmenu>\n    <datetime></datetime>\n    ",
             styleUrls: ['app/taskbar.component.css'],
             directives: [date_component_1.DateComponent]
         }), 

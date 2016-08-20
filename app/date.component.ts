@@ -1,11 +1,11 @@
 import {Component} from '@angular/core';
 @Component({
-    selector: 'datetime',
-    template: `
+  selector: 'datetime',
+  template: `
     <time>19:02</time>
     <date>2016/6/29</date>
     `,
-    styles: [`
+  styles: [`
     :host {
     width: 70px;
     display: block;
