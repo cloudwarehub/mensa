@@ -12,6 +12,8 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var taskbar_component_1 = require('./taskbar.component');
+var startmenu_component_1 = require('./startmenu.component');
+var date_component_1 = require('./date.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -20,7 +22,9 @@ var AppModule = (function () {
             imports: [platform_browser_1.BrowserModule],
             declarations: [
                 app_component_1.AppComponent,
-                taskbar_component_1.TaskbarComponent
+                taskbar_component_1.TaskbarComponent,
+                startmenu_component_1.StartmenuComponent,
+                date_component_1.DateComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

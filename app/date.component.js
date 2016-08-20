@@ -9,24 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var date_component_1 = require('./date.component');
-var TaskbarComponent = (function () {
-    function TaskbarComponent() {
-        this.open = false;
+var DateComponent = (function () {
+    function DateComponent() {
     }
-    TaskbarComponent.prototype.onStartClick = function () {
-        this.open = !this.open;
-    };
-    TaskbarComponent = __decorate([
+    DateComponent = __decorate([
         core_1.Component({
-            selector: 'taskbar',
-            template: "\n    <div class=\"start\" (click)=\"onStartClick()\"><img src=\"assets/windows_7_orb_icon_by_skyangels.png\"><startmenu *ngIf=\"open\"></startmenu></div>\n    <datetime></datetime>\n    ",
-            styleUrls: ['app/taskbar.component.css'],
-            directives: [date_component_1.DateComponent]
+            selector: 'datetime',
+            template: "\n    <time>19:02</time>\n    <date>2016/6/29</date>\n    ",
+            styles: ["\n    :host {\n    width: 70px;\n    display: block;\n    float: right;\n    padding: 5px;\n    }\n    time, date {\n    color: #ddd;\n    text-align: center;\n    display: block;\n    }\n    "]
         }), 
         __metadata('design:paramtypes', [])
-    ], TaskbarComponent);
-    return TaskbarComponent;
+    ], DateComponent);
+    return DateComponent;
 }());
-exports.TaskbarComponent = TaskbarComponent;
-//# sourceMappingURL=taskbar.component.js.map
+exports.DateComponent = DateComponent;
+//# sourceMappingURL=date.component.js.map
