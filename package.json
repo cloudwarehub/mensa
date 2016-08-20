@@ -31,9 +31,10 @@
     "bootstrap": "^3.3.6"
   },
   "devDependencies": {
+    "angular2-click-outside": "^0.1.0",
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
-    "typings":"^1.0.4"
+    "typings": "^1.0.4"
   }
 }

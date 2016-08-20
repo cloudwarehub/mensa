@@ -9,20 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var date_component_1 = require('./date.component');
-var TaskbarComponent = (function () {
-    function TaskbarComponent() {
+var DateComponent = (function () {
+    function DateComponent() {
     }
-    TaskbarComponent = __decorate([
+    DateComponent = __decorate([
         core_1.Component({
-            selector: 'taskbar',
-            template: "\n    <startmenu></startmenu>\n    <datetime></datetime>\n    ",
-            styleUrls: ['app/taskbar.component.css'],
-            directives: [date_component_1.DateComponent]
+            selector: 'datetime',
+            template: "\n    <time>19:02</time>\n    <date>2016/6/29</date>\n    ",
         }), 
         __metadata('design:paramtypes', [])
-    ], TaskbarComponent);
-    return TaskbarComponent;
+    ], DateComponent);
+    return DateComponent;
 }());
-exports.TaskbarComponent = TaskbarComponent;
-//# sourceMappingURL=taskbar.component.js.map
+exports.DateComponent = DateComponent;
+//# sourceMappingURL=datetime.component.js.map

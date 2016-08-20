@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef} from '@angular/core';
+import {DateComponent} from './date.component';
+
 @Component({
-    selector: 'taskbar',
-    template: `
-    <ul>
-        <li><img src="assets/windows_7_orb_icon_by_skyangels.png" style="height: 32px;"></li>
-    </ul>
-    
-    `
+
+  selector: 'taskbar',
+  template: `
+    <startmenu></startmenu>
+    <datetime></datetime>
+    `,
+  styleUrls: ['app/taskbar.component.css'],
+  directives: [DateComponent]
 
 })
-export class TaskbarComponent { }
+export class TaskbarComponent {
+}

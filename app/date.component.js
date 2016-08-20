@@ -9,28 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-var taskbar_component_1 = require('./taskbar.component');
-var ico_component_1 = require("./ico.component");
-var icoList_component_1 = require("./icoList.component");
-var AppModule = (function () {
-    function AppModule() {
+var DateComponent = (function () {
+    function DateComponent() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [
-                app_component_1.AppComponent,
-                taskbar_component_1.TaskbarComponent,
-                ico_component_1.IcoComponent,
-                icoList_component_1.IcoListComponent
-            ],
-            bootstrap: [app_component_1.AppComponent]
+    DateComponent = __decorate([
+        core_1.Component({
+            selector: 'datetime',
+            template: "\n    <time>19:02</time>\n    <date>2016/6/29</date>\n    ",
+            styles: ["\n    :host {\n    width: 70px;\n    display: block;\n    float: right;\n    padding: 5px;\n    }\n    time, date {\n    color: #ddd;\n    text-align: center;\n    display: block;\n    }\n    "]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], DateComponent);
+    return DateComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.DateComponent = DateComponent;
+//# sourceMappingURL=date.component.js.map
