@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
     </ul>
     
     `
+
 })
 export class TaskbarComponent { }

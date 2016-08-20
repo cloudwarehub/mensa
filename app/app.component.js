@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<taskbar></taskbar>'
+            template: '<icoList></icoList><taskbar></taskbar>'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

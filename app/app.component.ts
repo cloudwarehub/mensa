@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
-    template: '<taskbar></taskbar>'
+    template: '<icoList></icoList><taskbar></taskbar>'
 })
 export class AppComponent { }

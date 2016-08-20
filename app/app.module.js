@@ -12,6 +12,8 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var taskbar_component_1 = require('./taskbar.component');
+var ico_component_1 = require("./ico.component");
+var icoList_component_1 = require("./icoList.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -20,7 +22,9 @@ var AppModule = (function () {
             imports: [platform_browser_1.BrowserModule],
             declarations: [
                 app_component_1.AppComponent,
-                taskbar_component_1.TaskbarComponent
+                taskbar_component_1.TaskbarComponent,
+                ico_component_1.IcoComponent,
+                icoList_component_1.IcoListComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
